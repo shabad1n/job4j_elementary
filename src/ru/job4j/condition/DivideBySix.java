@@ -21,7 +21,7 @@ public class DivideBySix {
     }
 
     public static void main(String[]args) {
-        int in = 14;
+        int in = 1596;
         DivideBySix.checkNumber(in);
     }
 }
