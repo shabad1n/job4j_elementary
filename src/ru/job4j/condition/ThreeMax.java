@@ -6,16 +6,17 @@ public class ThreeMax {
         if (first >= second && first >= third) {
            result = first;
         }
-        if (second >= third) {
+        if (second >= first && second >= third) {
             result = second;
-        } else {
+        }
+        if (third >= first && third >= second) {
             result = third;
         }
         return result;
     }
 
     public static void main(String[]args) {
-        int rsl = ThreeMax.max(1, 10, 10);
+        int rsl = ThreeMax.max(10, 5, 1);
         System.out.println(rsl);
     }
 }
