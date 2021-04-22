@@ -13,7 +13,7 @@ public class CheckPrimeNumber {
     }
 
     public static void main(String[]args) {
-        boolean rsl = CheckPrimeNumber.check(1);
+        boolean rsl = CheckPrimeNumber.check(25);
         System.out.println(rsl);
     }
 
