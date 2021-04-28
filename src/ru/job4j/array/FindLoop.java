@@ -12,9 +12,21 @@ public class FindLoop {
         return rst;
     }
 
+    public static int indexOf(int[] data, int el, int start, int finish) {
+        int rst = 0;
+        for (int i = start; i < finish; i++) {
+            if (data[i] == el) {
+                rst = i;
+                break;
+            }
+        }
+        return rst;
+    }
+
     public static void main(String[] args) {
         int[] arr = new int[] {5, 10, 15, 25};
         int rsl = FindLoop.indexOf(arr, 5);
-        System.out.println(rsl);
+        int result = FindLoop.indexOf(arr, 5, 0, 3);
+        System.out.println(result);
     }
 }

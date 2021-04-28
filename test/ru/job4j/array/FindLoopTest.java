@@ -5,18 +5,22 @@ import org.junit.Test;
 
 public class FindLoopTest {
     @Test
-    public void whenBound3Then014() {
-        int bound = 3;
-        int[] result = Square.calculate(bound);
-        int[] expected = new int[] {0, 1, 4};
-        Assert.assertArrayEquals(expected, result);
+    public void whenArrayHasLength5Then0() {
+        int[] data = new int[] {5, 10, 3};
+        int el = 5;
+        int result = FindLoop.indexOf(data, el);
+        int expected = 0;
+        Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void whenBound4Then0149() {
-        int bound = 4;
-        int[] result = Square.calculate(bound);
-        int[] expected = new int[] {0, 1, 4, 9};
-        Assert.assertArrayEquals(result, expected);
+    public void whenFind3() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 2;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = 3;
+        Assert.assertEquals(expected, result);
     }
 }
