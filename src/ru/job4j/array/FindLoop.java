@@ -13,8 +13,8 @@ public class FindLoop {
     }
 
     public static int indexOf(int[] data, int el, int start, int finish) {
-        int rst = 0;
-        for (int i = start; i < finish; i++) {
+        int rst = -1;
+        for (int i = start; i <= finish; i++) {
             if (data[i] == el) {
                 rst = i;
                 break;
@@ -25,8 +25,7 @@ public class FindLoop {
 
     public static void main(String[] args) {
         int[] arr = new int[] {5, 10, 15, 25};
-        int rsl = FindLoop.indexOf(arr, 5);
-        int result = FindLoop.indexOf(arr, 5, 0, 3);
+        int result = FindLoop.indexOf(arr, 35, 0, 3);
         System.out.println(result);
     }
 }
