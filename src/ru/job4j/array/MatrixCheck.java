@@ -21,13 +21,27 @@ public class MatrixCheck {
         return result;
     }
 
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int row = 0; row < board.length; row++) {
+            for (int cell = 0; cell < board.length; cell++) {
+                if (row == cell) {
+                    rsl[row] = board[row][cell];
+                }
+            }
+        }
+        return rsl;
+    }
 
     public static void main(String[] args) {
         char[][] array = {
-                {'X', 'X', 'X'},
-                {'X', 'G', 'G'}
+                {'X', ' ', ' '},
+                {' ', 'X', ' '},
+                {' ', ' ', 'X'}
         };
-        boolean rsl = MatrixCheck.monoVertical(array, 0);
-        System.out.println(rsl);
+        char[] rsl = MatrixCheck.extractDiagonal(array);
+        for (char e : rsl) {
+            System.out.println(e);
+        }
     }
 }
