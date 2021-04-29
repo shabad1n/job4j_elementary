@@ -11,12 +11,23 @@ public class MatrixCheck {
         return result;
     }
 
+    public static boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][column] != 'X') {
+                result = false;
+            }
+        }
+        return result;
+    }
+
+
     public static void main(String[] args) {
         char[][] array = {
                 {'X', 'X', 'X'},
-                {'G', 'G', 'G'}
+                {'X', 'G', 'G'}
         };
-        boolean rsl = MatrixCheck.monoHorizontal(array, 0);
+        boolean rsl = MatrixCheck.monoVertical(array, 0);
         System.out.println(rsl);
     }
 }
