@@ -6,6 +6,7 @@ public class MatrixCheck {
             for (int j = 0; j < board.length; j++) {
                 if (board[row][j] != 'X') {
                     result = false;
+                    break;
                 }
             }
         return result;
