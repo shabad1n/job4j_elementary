@@ -19,7 +19,7 @@ public class Machine {
     }
 
     public static void main(String[] args) {
-        int[] arr = Machine.change(100, 33);
+        int[] arr = Machine.change(100, 50);
         for (int e : arr) {
             System.out.println(e);
         }
