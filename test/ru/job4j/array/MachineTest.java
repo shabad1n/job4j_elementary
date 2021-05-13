@@ -6,8 +6,8 @@ import org.junit.Test;
 public class MachineTest {
     @Test
     public void whenEquals() {
-        int money = 100;
-        int price = 100;
+        int money = 50;
+        int price = 50;
         int[] result = Machine.change(money, price);
         int[] expected = {};
         Assert.assertArrayEquals(expected, result);
