@@ -8,18 +8,18 @@ public class Machine {
         int[] rsl = new int[100];
         int size = 0;
         int change = money - price;
-        for (int i = 0; i < coins.length; i++) {
-                while (change - coins[i] >= 0) {
-                    rsl[size] = coins[i];
-                    size++;
-                    change -= coins[i];
-                }
+        for (int coin : coins) {
+            while (change - coin >= 0) {
+                rsl[size] = coin;
+                size++;
+                change -= coin;
             }
+        }
         return Arrays.copyOf(rsl, size);
     }
 
     public static void main(String[] args) {
-        int[] arr = Machine.change(100, 32);
+        int[] arr = Machine.change(100, 50);
         for (int e : arr) {
             System.out.println(e);
         }
