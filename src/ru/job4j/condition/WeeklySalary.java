@@ -3,11 +3,11 @@ package ru.job4j.condition;
 public class WeeklySalary {
     public static int calculate(int[] hours) {
         int salary = 0;
-        for (int i = 0; i <= hours.length; i++) {
+        for (int i = 0; i <= hours.length -1; i++) {
             if (i <= 4 && hours[i] > 0) {
-                salary += 10 * (hours[i] > 8 ? 8 : hours[i]) + (15 * (hours[i] > 8 ? 0 : hours[i] - 8));
-            } else if (i > 4 && i <= 6) {
-                salary += 20 * (hours[i] > 8 ? 8 : hours[i]) + (15 * (hours[i] > 8 ? 0 : hours[i] - 8));
+                salary += 10 * (hours[i] > 8 ? 8 : hours[i]) + (15 * (hours[i] < 8 ? 0 : hours[i] - 8));
+            } else {
+                salary += 20 * (hours[i] > 8 ? 8 : hours[i]) + (30 * (hours[i] < 8 ? 0 : hours[i] - 8));
             }
         }
         return salary;
