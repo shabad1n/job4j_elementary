@@ -11,10 +11,10 @@ sudo: false
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
-# Отправлять уведомление на почту teenzo@yandex.ru (Изменить на свою) если сборка упала
+# Отправлять уведомление на почту Teenzo@yandex.ru (Изменить на свою) если сборка упала
 notifications:
   email:
     recipients:
-      - teenzo@yandex.ru
+      - Teenzo@yandex.ru
     on_success: never # default: change
     on_failure: always # default: always
