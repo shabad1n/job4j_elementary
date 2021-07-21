@@ -27,6 +27,7 @@ public class MatrixCheck {
         char[] rsl = new char[board.length];
         for (int row = 0; row < board.length; row++) {
                     rsl[row] = board[row][row];
+                    System.out.println(rsl[row]);
                 }
         return rsl;
     }
