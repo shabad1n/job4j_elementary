@@ -4,7 +4,7 @@ public class MinDiapason {
     public static int findMin(int[] data, int start, int finish) {
         int min = data[start];
         for (int i = start + 1; i <= finish; i++) {
-            if(data[i] < min) {
+            if (data[i] < min) {
                 min = data[i];
                }
           }
@@ -12,7 +12,7 @@ public class MinDiapason {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[] {10, 5 , 3, 1};
+        int[] arr = new int[] {10, 5, 3, 1};
         int min = MinDiapason.findMin(arr, 1, 3);
         System.out.println(min);
     }

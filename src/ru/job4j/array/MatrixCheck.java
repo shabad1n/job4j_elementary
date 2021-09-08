@@ -51,7 +51,7 @@ public class MatrixCheck {
         };
         char[] rsl = MatrixCheck.extractDiagonal(array);
         for (char e : rsl) {
-            //System.out.println(e);
+            System.out.println(e);
         }
         boolean val = MatrixCheck.isWin(array);
         System.out.println(val);

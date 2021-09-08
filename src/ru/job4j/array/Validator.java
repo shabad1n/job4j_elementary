@@ -9,7 +9,7 @@ public class Validator {
                 sum++;
             }
         }
-        System.out.println(data.length/2);
+        System.out.println(data.length / 2);
         return sum <= data.length / 2;
     }
 

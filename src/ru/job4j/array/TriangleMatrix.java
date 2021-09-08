@@ -8,7 +8,7 @@ public class TriangleMatrix {
             triangle[i] = new int[i + 1];
         }
             for (int n = 0; n < triangle.length; n++) {
-                for(int j = 0; j < triangle[n].length; j++) {
+                for (int j = 0; j < triangle[n].length; j++) {
                     triangle[n][j] = temp;
                     System.out.println(triangle[n][j]);
                     temp++;

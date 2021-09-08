@@ -48,9 +48,8 @@ public class PushTheNumbers {
         }
     }
 
-
     public static void main(String[] args) {
-        int [][] array = {
+        int[][] array = {
                 {62, 12, 86, 96, 2},
                 {78, 98, 10, 45, 86},
                 {82, 59, 47, 88, 79},
