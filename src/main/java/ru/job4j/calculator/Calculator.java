@@ -9,15 +9,19 @@ public class Calculator {
     }
 
     public static int minus(int i) {
-        return x - i;
+        return i - x;
     }
 
     public double divide(int i) {
         return i / x;
     }
 
+    public double multiply(int a) {
+        return x * a;
+    }
+
     public double sumAllOperation(int i) {
-        return sum(i) + minus(i) + this.divide(i);
+        return sum(i) + minus(i) + this.divide(i) * multiply(i);
     }
 
     public static void main(String[] args) {
